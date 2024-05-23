@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            background: white; /* Specify the path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+        }
+        form {
+            background-color: white
+            align-items: center;
+            width: 730px;
+            height: 580px;
+            margin: auto; /* Center the form horizontally */
+            margin-top: 90px; /* Add some space from the top */
+            padding: 90px; /* Add padding for better appearance */
+            border-radius: 80px; /* Add rounded corners */
+        }
+        /* You can add more CSS styling for labels, inputs, etc. here */
+    </style>
+</head>
+
+<body>
+    <center>
+        <h5>REGISTER INFORMATION</h5>
+        <form action="register.php" method="POST">
+            <label>FirstName:</label>
+            <input type="text" name="fname" placeholder="Enter your firstname" required><br><br>
+            
+            <label>LastName:</label>
+            <input type="text" name="lname" placeholder="Enter your lastname" required><br><br>
+            
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter your username" required><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+            
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required><br><br>
+            
+            <label>Telephone:</label>
+            <input type="text" name="telephone" placeholder="Enter your telephone" required><br><br>
+            
+            <label>Dob:</label>
+            <input type="date" name="DoB" placeholder="DoB" required><br><br>
+            
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+            
+            <label>Activation_code:</label>
+            <input type="text" name="activation_code" placeholder="Enter activation_code" required><br><br>
+            
+            <input type="submit" name="register" value="Register">
+            <input type="reset" name="cancel" value="Cancel">
+        </form>
+    </center>
+</body>
+
+</html>

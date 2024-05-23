@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            background: url('./images/image7.jpg') center/cover no-repeat;
+             /* Replace 'image7.jpg' with the URL of your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        form {
+            background-color: white;
+            align-items: center;
+            width: 350px; /* Increased width */
+            height: 300px; /* Increased height */
+            margin: auto; /* To center the form horizontally */
+            margin-top: 70px; /* Adjust this value as needed */
+            padding: 40px;
+            border-radius: 30px;
+        }
+        label {
+            font-size: 30px; /* Set the font size for labels */
+        }
+        input[type="email"],
+        input[type="password"] {
+            font-size: 40px; /* Set the font size for input fields */
+            width: 100%; /* Make input fields full width */
+            margin-bottom: 30px; /* Add some space between input fields */
+        }
+        input[type="submit"] {
+            font-size: 38px; /* Set the font size for the submit button */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h5>LOGIN FORM</h5>
+        <form action="login.php" method="POST">
+            <br><br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br>
+            <input type="submit" value="Login">
+            <p style="font-size: 20px;"><a href="resetpassword.php">Forgot Password?</a></p>
+
+            
+
+            <!-- Paragraph offering the option to create a new account, with a link to the registration page -->
+            <p style="font-size: 20px;"><i>Don't you have an account?</i> 
+                <a href="register.html">Create New Account</a>
+            </p>
+       
+        </form>
+    </center>
+</body>
+</html>
